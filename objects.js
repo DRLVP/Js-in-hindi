@@ -36,3 +36,20 @@ let city = {
     countryName: 'USA',
     city: 'new york',
 }
+
+let city1 = {
+    countryName: 'UK',
+    city: 'London'
+}
+let city2 = {
+    countryName: 'Australia',
+    city: 'Melborne'
+}
+let city3 = {
+    countryName: 'India',
+    city: 'Delhi'
+}
+
+// const countryAndCity = Object.assign({}, city1, city2, city3);
+const countryAndCity = { ...city, ...city1, ...city2, ...city3 }
+console.log(countryAndCity);

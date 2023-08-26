@@ -1,17 +1,24 @@
 // No-1: Check if a number is odd or even in JavaScript
-/*
-const isEvenOrOdd = () => {
-    const num = Number.parseInt(prompt('enter any number'));
-    if (num % 2 === 0) {
-        alert(`${num} is even number`);
-    } else {
-        alert(`${num} is odd number`);
-    }
+document.addEventListener("DOMContentLoaded", function () {
+    const numberInput = document.getElementById("numberInput");
+    const checkButton = document.getElementById("checkButton");
+    const resultDiv = document.getElementById("result");
 
-}
+    checkButton.addEventListener('click', () => {
+        const enteredNumber = parseInt(numberInput.value);
+        if (enteredNumber % 2 === 0) {
+            resultDiv.innerHTML = `${enteredNumber} is even number`
 
-isEvenOrOdd();
-*/
+        } else if (numberInput % 2 !== 0) {
+            resultDiv.innerHTML = `${enteredNumber} is odd number`
+
+        } else {
+            alert(`Please enter the valid number`);
+        }
+    })
+
+});
+
 
 // No-2: Find the largest of three number;
 /*

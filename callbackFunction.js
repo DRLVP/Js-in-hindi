@@ -13,10 +13,4 @@ const add = calculator(5, 8, (num1, num2) => {
 // console.log(add);
 //+++++++++++++++++++++ PIZZA MAKING PROCESS ++++++++++++++++++++
 
-let flour = (callback) => {
-    setTimeout(() => {
-        const flour;
-    })
-}
-
 
