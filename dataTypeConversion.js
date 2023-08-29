@@ -23,3 +23,7 @@ let single = document.all;
 let hosa = Boolean(single);
 // console.log(typeof hosa);
 // console.log(hosa);
+
+
+
+

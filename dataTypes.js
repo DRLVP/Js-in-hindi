@@ -18,4 +18,6 @@
 // JAVASCRIPOT NULL ATA OBJECT HOI
 
 let num = 22
-name = "drlov" 
+name = "drlov"
+
+
