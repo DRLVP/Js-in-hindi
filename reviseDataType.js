@@ -11,7 +11,7 @@ let address; //Undefined
 let movie = null; //null
 
 let sym = Symbol('hello'); //symbol
-let sym1 = Symbol('hello'); //symbol completely unique lagie value same houk
+let sym1 = Symbol('hello'); //symbol completely unique lagile value same houk
 const bigNum = BigInt(24141412414); //BigInt
 // console.log(typeof bigNum);
 
