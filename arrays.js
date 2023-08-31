@@ -84,9 +84,11 @@ function superHero() {
     console.log(heros);
 };
 
-// superHero();
+superHero();
 
 // Problem 2: Product of Array Except Self
 
 const myArr = [1, 2, 3, 4];
 // console.log(myArr);
+
+console.log(marvelHero.indexOf('thor'));
