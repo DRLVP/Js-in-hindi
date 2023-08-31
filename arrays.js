@@ -42,5 +42,6 @@ const newNum = num.flat(Infinity); //return new array
 
 const movie = [{ name: 'thor', collection: 2.5 }, { name: 'iron-man', collection: 125 }];
 
-console.log(movie[0].collection);
-console.log(movie[0].name);
+// console.log(movie[0].collection);
+// console.log(movie[0].name);
+
