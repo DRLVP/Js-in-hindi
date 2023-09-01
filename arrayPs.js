@@ -19,7 +19,6 @@ window.addEventListener('DOMContentLoaded', () => {
             window.reload();
         }
 
+        console.log(userName);
     });
 })
-
-console.log(userName);
