@@ -92,10 +92,10 @@ const userDetails = [
 // console.log(userDetails[1].password);
 
 // ACCESSING ALL KEY FROM AN ARRAY
+/*
+console.log(Object.keys(user)); //ee keybur return koribo ata arrayt (MOST IMPORTANT);
 
-console.log(Object.keys(user)); //ee keybur return koribo ata arrayt (MOST IMPORTANT); 
-
-console.log(Object.values(user));//ee keybur return koribo ata arrayt (MOST IMPORTANT); 
+console.log(Object.values(user));//ee keybur return koribo ata arrayt (MOST IMPORTANT);
 
 console.log(Object.entries(user)); //ee object propertie homuhok array loi covert kori die
 
@@ -104,3 +104,16 @@ console.log(user.hasOwnProperty('name'));
 // console.log(Object.isSealed(user))
 
 console.log(user.toString);
+*/
+
+// +++++++++++++ DE-STRUCTUREING IN OBJECT ++++++++++++++
+
+const courese = {
+    name: 'js-in-hindi',
+    price: 999,
+    instructor: 'DRLOV'
+}
+
+const { instructor: mastor } = courese; //iyat ami object tu bhangi lolu jate access korute code clean hoi tha k
+
+console.log(mastor); 
