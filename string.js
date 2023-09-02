@@ -5,7 +5,7 @@ const age = 32;
 
 // console.log(`hello my name is ${user}, and I am ${age} years old`); //string Interpolation
 
-
+/*
 const myName = new String('         DRLOV       ');
 console.log(myName.trim());
 console.log(myName.endsWith(''));
@@ -17,3 +17,6 @@ console.log(myName.indexOf('V'));
 console.log(myName.repeat(5));
 
 console.log(myName.replace());
+*/
+
+console.log(user.charAt('n'));

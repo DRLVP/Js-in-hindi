@@ -14,7 +14,7 @@ let negNum = Number(-num);
 // console.log(typeof (3 + 2 + "3"));
 
 // console.log(typeof ("1" + 2 + 3));
-// console.log(typeof (3 + 2 + "3")); //DON'T USE THESE TYPE OF CODE
+// console.log(typeof (3 + 2 + "3")); //DON'T WRITE THESE TYPE OF CODE
 
 // console.table([+true, +false]);
 

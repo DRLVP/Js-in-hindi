@@ -1,4 +1,4 @@
-// JavaScriptot mainley 2 ta bhagot voguwa hoise. javascripot kenedore data memoryt store hobo ru kenedore data access kora hbo tar uporot bhitti kori 2ta bhagot bhoguwa hoise
+// JavaScriptot DATA-TYPE mainley 2 ta bhagot voguwa hoise. javascripot kenedore data memoryt store hobo ru kenedore data access kora hbo tar uporot bhitti kori 2ta bhagot bhoguwa hoise
 
 // NO 1:- PRIMITIVE DATATYPE
 
