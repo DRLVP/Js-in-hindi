@@ -26,11 +26,11 @@ for (const [key, value] of country) { //de-structure in array
 }
 
 
-const users = {
-    name: 'drlv',
-    id: 11111,
-    age: 22
-}
+// const users = {
+//     name: 'drlv',
+//     id: 11111,
+//     age: 22
+// }
 
 // for (const [key, value] of users) {
 //     console.log(key, ":", value);
@@ -45,6 +45,17 @@ const users = {
 //     console.log(`${marvel[key]}`);
 // }
 
-for (const [key, value] in country) {
-    console.log(key, ':', value);
-}
+// for (const [key, value] in country) {
+//     console.log(key, ':', value);
+// }
+
+
+const users = [{ name: 'drlv', id: 11111 }, { name: 'jhon', id: 22222 }, { name: 'sam', id: 33333 }];
+
+// users.forEach((item, i, arr) => {
+//     if (item.id > 22222) {
+//         console.log(item.id);
+//         console.log(item.name);
+
+//     }
+// })
