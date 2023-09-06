@@ -1,6 +1,6 @@
 // javaScripot loops ok iteration buli kuwa hoi
 
-const users = [{ name: 'drlv', id: 11111 }, { name: 'jhon', id: 22222 }];
+const users = [{ name: 'drlv', id: 11111 }, { name: 'jhon', id: 22222 }, { name: 'sam', id: 33333 }];
 
 // for (let i = 0; i < users.length; i++) {
 //     const element = users[i];
@@ -26,13 +26,27 @@ for (let i = 0; i < arr.length; i++) {
 
 // BREAK AND CONTINUE
 
-for (let i = 1; i <= 20; i++) {
-    const element = i;
-    if (i === 5) {
-        console.log('deteced 5');
-        // break;
-        continue;
-    }
+// for (let i = 1; i <= 20; i++) {
+//     const element = i;
+//     if (i === 5) {
+//         console.log('deteced 5');
+//         // break;
+//         continue;
+//     }
 
-    // console.log(element);
-}
+//     // console.log(element);
+// }
+
+// WHILE LOOP AND DO-WHILE LOOP
+
+// let i = 1;
+// while (i < users.length) {
+//     console.log(users[i]);
+//     i += 2; //exit condition
+// }
+
+// let i = 0;
+// do {
+//     console.log(users[i]);
+//     i++;
+// } while (i < users.length);
