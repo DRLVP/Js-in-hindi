@@ -108,12 +108,16 @@ console.log(user.toString);
 
 // +++++++++++++ DE-STRUCTUREING IN OBJECT ++++++++++++++
 
-const courese = {
+const course = {
     name: 'js-in-hindi',
     price: 999,
     instructor: 'DRLOV'
 }
 
-const { instructor: mastor } = courese; //iyat ami object tu bhangi lolu jate access korute code clean hoi tha k
+const { instructor: mastor } = course; //iyat ami object tu bhangi lolu jate access korute code clean hoi tha k
+const { price: dum } = course;
+const { name: num2 } = course;
 
-console.log(mastor); 
+console.log(mastor);
+console.log(dum);
+console.log(num2);

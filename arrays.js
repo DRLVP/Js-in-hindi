@@ -51,9 +51,10 @@ let name = 'durlov',
     pin = 785688;
 // console.log(Array.from(name));
 const user = Array.of(name, title, address, pin);
-// user.forEach(() => {
-//     console.log(user.toString());
-// })
+user.forEach((item) => {
+    console.log(item.toString()); //string boni gol
+    // console.log(typeof item);
+});
 
 
 
@@ -84,11 +85,11 @@ function superHero() {
     console.log(heros);
 };
 
-superHero();
+// superHero();
 
 // Problem 2: Product of Array Except Self
 
 const myArr = [1, 2, 3, 4];
 // console.log(myArr);
 
-console.log(marvelHero.indexOf('thor'));
+// console.log(marvelHero.indexOf('thor'));
