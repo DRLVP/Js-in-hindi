@@ -30,20 +30,45 @@ const main = document.querySelector('.main');
 // console.log(main.children[1].textContent);
 // console.log(main.firstElementChild);
 //console.log(main.childNodes); //iyar joriyote ami jiman bur element sob pao, jodi ami line-break diu tente iyak text-node buli kuwa hoi logote protitu element ok ata ata node buli dhora hoi
+main.style.display = 'flex';
+main.style.justifyContent = 'center';
+main.style.alignItem = 'center';
+main.style.gap = '20px';
 
 const list = document.querySelector('.list');
 // console.log(list.parentElement);
 // console.log(list.nextElementSibling);
 
-const div = document.createElement('div');
-div.className = 'DOM';
-div.id = Math.floor(Math.random() * 10);
+const h1 = document.createElement('h1');
+h1.className = 'DOM';
+h1.id = Math.floor(Math.random() * 10);
 // div.innerText = "Hello welcome!"
 // console.log(div);
 
 //MOST importantly .id , .innerHTML, .innerText korlile ee value homuh overwrite kore haikarone setAttribute method use koribo lage ee existing elementot set kore
 
 const addText = document.createTextNode("hello welcome");
-div.appendChild(addText);
+h1.appendChild(addText);
+document.body.appendChild(h1);
 
-document.body.appendChild(div);
+
+const contact = document.createElement('form');
+
+const input = document.createElement('input');
+input.setAttribute('type', 'text');
+const inputEmail = document.createElement('input');
+inputEmail.setAttribute('type', 'email');
+const btn = document.createElement('button');
+btn.setAttribute('type', 'submit');
+btn.innerText = 'submit';
+contact.appendChild(input)
+contact.appendChild(inputEmail)
+contact.appendChild(btn)
+
+
+contact.style.display = 'flex';
+contact.style.flexDirection = 'column';
+
+document.body.appendChild(contact);
+
+
