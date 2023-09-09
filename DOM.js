@@ -25,33 +25,72 @@ body.style.color = '#fff';
 
 // +++++++++++++++ CREATE A NEW NODE +++++++++++
 
-const main = document.querySelector('.main');
 // console.log(main);
 // console.log(main.children[1].textContent);
 // console.log(main.firstElementChild);
 //console.log(main.childNodes); //iyar joriyote ami jiman bur element sob pao, jodi ami line-break diu tente iyak text-node buli kuwa hoi logote protitu element ok ata ata node buli dhora hoi
-main.style.display = 'flex';
-main.style.justifyContent = 'center';
-main.style.alignItem = 'center';
-main.style.gap = '20px';
+// main.style.display = 'flex';
+// main.style.justifyContent = 'center';
+// main.style.alignItem = 'center';
+// main.style.gap = '20px';
 
-const list = document.querySelector('.list');
+function addLanguageName(lang) {
+    const list = document.createElement('li');
+    list.innerHTML = `${lang}`
+    document.querySelector('.main').appendChild(list);
+};
+addLanguageName('javaScript'); //ai function tu optimize nohoi karon jetia ai method tu run hbo tatia complete DOM tree structure treverse kori lastoloi jbo.
+
+addLanguageName('python');
+addLanguageName('cpp');
+
+
+// OPTIMIZE METHOD
+function addLang(lang) {
+    const list = document.createElement('li');
+    list.appendChild(document.createTextNode(lang));
+    document.querySelector('.main').appendChild(list);
+};
+addLang('ruby');
+addLang('goLang'); //recommend method
+
+
+// ++++++++++++ EDIT AND REMOVE ELEMENT +++++++++++
+
+const python = document.querySelector('li:nth-child(2)')
+// python.innerHTML = 'swift';
+const newLi = document.createElement('li');
+newLi.textContent = 'swift';
+python.replaceWith(newLi);
+
+
+const js = document.querySelector('li:first-child');
+js.outerHTML = '<li>TypeScript</li>'
+
+
+const goLang = document.querySelector('li:last-child');
+goLang.remove();
+
+// newLi.appendChild(document.createTextNode('swift'));
+
+// const list = document.querySelector('.list');
 // console.log(list.parentElement);
 // console.log(list.nextElementSibling);
 
-const h1 = document.createElement('h1');
-h1.className = 'DOM';
-h1.id = Math.floor(Math.random() * 10);
+// const h1 = document.createElement('h1');
+// h1.className = 'DOM';
+// h1.id = Math.floor(Math.random() * 10);
 // div.innerText = "Hello welcome!"
 // console.log(div);
 
 //MOST importantly .id , .innerHTML, .innerText korlile ee value homuh overwrite kore haikarone setAttribute method use koribo lage ee existing elementot set kore
 
-const addText = document.createTextNode("hello welcome");
-h1.appendChild(addText);
-document.body.appendChild(h1);
 
+// const addText = document.createTextNode("hello welcome");
+// h1.appendChild(addText);
+// document.body.appendChild(h1);
 
+/*
 const contact = document.createElement('form');
 
 const input = document.createElement('input');
@@ -70,5 +109,5 @@ contact.style.display = 'flex';
 contact.style.flexDirection = 'column';
 
 document.body.appendChild(contact);
-
+*/
 
