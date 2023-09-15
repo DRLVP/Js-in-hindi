@@ -70,4 +70,4 @@ console.log(userThree);
 console.log(userFour.constructor); // nijore ata reference hoi
 // new keyword diar loge loge prothome ata empty object create hoi aru ditiote ata constructor function call hoi aru constructor function or kaam hoise jiman bur argument ase haibur di diye aru tritiote this jeyword or joriote jiman bur argument dia ase hokolu bur inject hoi jai aru 4th stepot function execute hoi output di die.
 
-// read instance of
+// read instance of method in javascript
