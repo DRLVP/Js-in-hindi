@@ -55,3 +55,61 @@ const rocky = new user("rocky", 25);
 
 // +++++++++++ PROTOTYPE EXAMPLE ++++++++++++++
 
+//.create function tuk factory function buli kuwa hoi mane kunu ata propertier bonabole default function tuk factory function buli kuwa hoi
+
+const hero = ['thor', 'spiderman', 'hulk', 'ironman'];
+
+const heroPower = {
+    thor: 'hammer',
+    spiderman: 'sling',
+    hulk: 'body',
+    ironman: 'nano-tech'
+}
+
+// jodi ami nije bonuwa prototype tu baleg baleg ke nidi direct main Object ok di diu tatia hai prototype method tu sobote availale hbo karon Javascript ot protitu bos2 ai technically ata ata object hoi 
+
+Object.prototype.myProp = function () {
+    console.log(`hello marvel fans these are the heros: ${hero}`);
+}
+
+// heroPower.myProp();
+// hero.myProp();
+
+Array.prototype.marvel = function () {
+    console.log(`marvel fans hello`);
+}
+
+hero.marvel();
+// heroPower.marvel(); //ee okl arrayt thakibo
+
+// +++++++++++++ PROTOTYPE INHERITANCE +++++++++++
+
+// Inheritance mane hoise default propertier bahireo declare kora properti ba method eetu a hitur majot share kore 
+
+const creator = {
+    makeVideos: true,
+    vlog: true,
+    thumbnail: true
+}
+
+const blogger = {
+    writeBlog: true
+}
+
+const designer = {
+    makeGraphic: true
+}
+
+const contentCreator = {
+    seo: true,
+    __proto__: creator, // iyat creator objector properties bur pai gol
+    // __proto__: blogger,
+    // __proto__: designer
+}
+// console.log(creator);
+// console.log(contentCreator);
+
+// MOdern syntex
+
+const allCreator = Object.setPrototypeOf(contentCreator, creator);
+console.log(allCreator);
