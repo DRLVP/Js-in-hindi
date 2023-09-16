@@ -1,6 +1,8 @@
 // BIND IN JAVASCRPT
 
 class React {
+    // bind ee kebol ata propertie reference nohoi jiman bilak reference ase sob loi jai
+
     constructor() {
         this.marvel = 'thor';
         this.dc = 'superman';
