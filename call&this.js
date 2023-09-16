@@ -18,4 +18,4 @@ function createUser(id, email, password) {
     // call pass the current execution contex to another function
 }
 
-console.log(new createUser(22, "demo@gmail.com", '123abc'));
+console.log(new createUser(0, "demo@gmail.com", '123abc'));
