@@ -17,3 +17,20 @@ let state;
 
 */
 
+var myName = "durlov";
+myName = "pagol"
+// console.log(myName);
+
+// function greet() {
+//     var myName = "sudurbhai"
+//     console.log(`hello ${myName}`);
+// }
+// greet()
+
+// console.log(myName);
+
+const you = "I am thor";
+// you = "I am spiderman"
+console.log(you);
+
+

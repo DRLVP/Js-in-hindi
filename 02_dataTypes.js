@@ -21,3 +21,22 @@ let num = 22
 
 const myDate = Date();
 // console.log(myDate);
+
+const myName = undefined;
+// console.log(typeof myName);
+
+// string
+// symbol
+// number
+// null
+// boolean
+// bigint
+// undefined
+
+const mySymbol = Symbol(55);
+// console.log(typeof mySymbol);
+
+// console.log(TypeError);
+
+const myType = new TypeError('404 not found pagol', "404 error");
+// console.log(myType);
